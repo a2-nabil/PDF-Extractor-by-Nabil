@@ -199,7 +199,7 @@
         margin: 0 auto;
       }
       #extractedDataForm .btn {
-        width: 160px;
+        width: 200px;
         margin: 0 auto;
         grid-column: span 2;
       }
@@ -360,12 +360,12 @@
       $(document).ready(function () {
         $("#pdfForm").on("submit", function (e) {
           e.preventDefault(); // Prevent the default form submission
-
+    
           var formData = new FormData(this);
-
+    
           // Show the loader
           $("#loader").show();
-
+    
           $.ajax({
             url: "upload.php", // Point to a separate PHP file to handle the upload
             type: "POST",
@@ -374,6 +374,9 @@
             processData: false,
             success: function (response) {
               $("#extractedData").html(response); // Display the extracted data
+              
+              // Call the setup function after AJAX success
+              setupDownloadButton();
             },
             error: function () {
               alert("Failed to upload the file.");
@@ -386,5 +389,6 @@
         });
       });
     </script>
+    <script src="./app.js"></script>
   </body>
 </html>
