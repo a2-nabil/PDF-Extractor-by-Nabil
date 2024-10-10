@@ -45,9 +45,6 @@ pip install PyMuPDF
 
 ## Example
 
-```bash
-python pdf_extractor.py example.pdf
-```
 
 This command will extract all text and images from `example.pdf` and save them in the `output` directory.
 
@@ -61,14 +58,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-- [PyPDF2](https://github.com/mstamy2/PyPDF2) for PDF manipulation.
-- [Pillow](https://python-pillow.org/) for image processing.
-- [pdf2image](https://github.com/Belval/pdf2image) for converting PDF pages to images.
+- [PyMuPDF](https://github.com/pymupdf/PyMuPDF) for converting PDF pages to images.
 
 ## Contact
 
-For questions or feedback, please contact me at [your-email@example.com].
-
-```
-
-Feel free to replace placeholders with your project details, like the repository URL and your contact information!
+For questions or feedback, please contact me at [a2nabil000@gmail.com].
