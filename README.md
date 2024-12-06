@@ -1,4 +1,4 @@
-Sure! Here’s a sample README file for your PDF extractor project. You can modify it as needed to fit your specific features and usage.
+
 
 ```markdown
 # PDF Extractor
